@@ -8,7 +8,7 @@ export default function Nav() {
   return (
     <div className='absolute top-3 sm:top-8 w-full flex justify-center'>
         <Link
-            href="#"
+            href="https://github.com/jakobhoeg/shadcn-button-extended"
             className={cn(
               buttonVariants({ variant: "ghost", size: "icon" }),
               "h-12 w-12 rounded-full",
