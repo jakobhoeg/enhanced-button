@@ -2,12 +2,12 @@
 
 An enhanced version of the default **shadcn-button** component. 
 
-It expands the regular component by adding new beautiful button styles and features, so you no longer have to create multiple button components for your projects.
+Expands the default component by adding new beautiful button styles and features with minimal code, so you no longer have to create and manage multiple button components for your projects.
 
 
 # Preview
 
-
+https://github.com/jakobhoeg/enhanced-button/assets/114422072/ee05475f-6502-4e7a-8bde-ae5144ece85e
 
 # Requisites
 
