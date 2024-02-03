@@ -18,7 +18,7 @@ https://github.com/jakobhoeg/enhanced-button/assets/114422072/ee05475f-6502-4e7a
 
 # Installation
 
-All it takes is **two** copy & paste.
+All it takes is **two** copy & paste and you're ready to go.
 
 ***1. Copy the `button.tsx` component below and replace it with your existing one in `src/components/ui/button.tsx`***
 
