@@ -6,9 +6,9 @@ An enhanced version of the default **shadcn-button** component.
 
 Expands the default component by adding new beautiful button styles and features with minimal code, so you no longer have to create and manage multiple button components for your projects.
 
-[Demo](https://enhanced-button.vercel.app/) • [Requisites](#Requisites)
+[Demo](https://enhanced-button.vercel.app/) • [Preview](#Preview) • [Requisites](#Requisites) • [Installation](#Installation) • [Usage](#Usage) 
 
-# Preview & Usage Guide
+# Preview
 
 https://github.com/jakobhoeg/enhanced-button/assets/114422072/ee05475f-6502-4e7a-8bde-ae5144ece85e
 
