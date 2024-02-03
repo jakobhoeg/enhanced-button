@@ -1,6 +1,6 @@
 ## enhanced-button
 
-An enhanced/expanded version of the **shadcn-button** component. 
+An enhanced version of the default **shadcn-button** component. 
 
 It expands the regular component by adding new beautiful button styles and features, so you no longer have to create multiple button components for your projects.
 
