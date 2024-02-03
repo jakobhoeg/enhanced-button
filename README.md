@@ -1,19 +1,21 @@
-## enhanced-button
+[<img src="ezgif-7-38e5f4fe19.gif">](https://enhanced-button.vercel.app/)
+
+# enhanced-button
 
 An enhanced version of the default **shadcn-button** component. 
 
 Expands the default component by adding new beautiful button styles and features with minimal code, so you no longer have to create and manage multiple button components for your projects.
 
 
-# Preview
+## Preview with Installation Guide
 
 https://github.com/jakobhoeg/enhanced-button/assets/114422072/ee05475f-6502-4e7a-8bde-ae5144ece85e
 
-# Requisites
+## Requisites
 
 [shadcn-ui](https://ui.shadcn.com/docs/installation) and [shadcn-ui button component](https://ui.shadcn.com/docs/components/button) must be installed in your project.
 
-# Installation
+## Installation
 
 All it takes is **two** copy & paste.
 
@@ -158,7 +160,7 @@ const config = {
 
 </details>
 
-# Usage
+## Usage
 
 Example usage:
 
