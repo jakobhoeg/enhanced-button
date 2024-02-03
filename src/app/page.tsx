@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="relative flex min-h-screen flex-col items-center justify-between">
+    <main className="relative flex flex-col items-center justify-between">
       <div className="absolute  h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
       <div className="z-10 px-5 text-center max-w-8xl w-full h-full items-center  text-sm flex flex-col gap-5">
         <Nav />
@@ -25,7 +25,7 @@ export default function Home() {
             </h1>
           </div>
           <p className="text-base max-w-prose sm:text-lg pt-5">
-            Easily extend the regular shadcn-button component with new button
+            Easily expand the regular shadcn-button component with new button
             styles, without the need of creating new additional button components.
           </p>
         </div>
