@@ -15,12 +15,11 @@ It expands the regular component by adding new beautiful button styles and featu
 
 # Installation
 
-
 All it takes is **two** copy & paste.
 
 ***1. Copy the `button.tsx` component below and replace it with your existing one in `src/components/ui/button.tsx`***
 
-***2. Copy the lines from `tailwin.config.ts` to your existing file.***
+***2. Copy the lines from `tailwind.config.ts` to your existing file.***
 <details>
   <summary>button.tsx</summary>
 
@@ -159,10 +158,27 @@ const config = {
 
 </details>
 
-
-
-
 # Usage
+
+Example usage:
+
+```tsx
+import { Button } from "./ui/button";
+
+<Button variant="expandIcon" Icon={ArrowRightIcon} iconPlacement="right">
+  Icon right
+</Button>
+```
+
+```tsx
+import { Button } from "./ui/button";
+
+<Button variant="gooeyRight">
+  Gooey right
+</Button>
+```
+
+Check out the [demo](https://enhanced-button.vercel.app/) to see **all** the different styles.
 
 
 
