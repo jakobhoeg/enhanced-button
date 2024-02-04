@@ -14,7 +14,7 @@ export default function Home() {
       <div className="absolute  h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
       <div className="z-10 px-5 text-center max-w-8xl w-full h-full items-center  text-sm flex flex-col gap-5">
         <Nav />
-        <div className="h-screen text-center max-w-8xl w-full items-center  text-sm flex flex-col gap-5">
+        <div className="min-h-screen text-center max-w-8xl w-full items-center  text-sm flex flex-col gap-5">
         <div className="flex flex-col gap-1 sm:gap-4 pt-14 sm:pt-32 items-center justify-center">
           <div>
             <h1 className="text-3xl font-medium sm:text-6xl">
