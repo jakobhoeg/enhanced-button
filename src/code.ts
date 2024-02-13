@@ -125,14 +125,14 @@ const tailwindCode = `const config = {
 
 const exampleButtonIconRight = `import { Button } from "./ui/button";
 
-<Button variant="expandIcon" Icon={ArrowRightIcon} iconPlacement="right">
+<Button variant="expandIcon" Icon={<ArrowRightIcon />} iconPlacement="right">
 Icon right
 </Button>`
 
 
 const exampleButtonIconLeft = `import { Button } from "./ui/button";
 
-<Button variant="expandIcon" Icon={ArrowLeftIcon} iconPlacement="left">
+<Button variant="expandIcon" Icon={<ArrowLeftIcon />} iconPlacement="left">
 Icon left
 </Button>`
 
@@ -172,4 +172,4 @@ const exampleButtonLinkHover2 = `import { Button } from "./ui/button";
 Link hover 2
 </Button>`
 
-export  {buttonCode, tailwindCode, exampleButtonIconRight, exampleButtonIconLeft, exampleButtonGooeyLeft, exampleButtonGooeyRight, exampleButtonShine, exampleButtonRingHover, exampleButtonLinkHover1, exampleButtonLinkHover2}
+export { buttonCode, exampleButtonGooeyLeft, exampleButtonGooeyRight, exampleButtonIconLeft, exampleButtonIconRight, exampleButtonLinkHover1, exampleButtonLinkHover2, exampleButtonRingHover, exampleButtonShine, tailwindCode };
