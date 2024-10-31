@@ -43,7 +43,6 @@ export default function CodeDisplayBlock ({code, lang, component}: ButtonCodeblo
         paddingLeft: '0.4rem',
         overflowY: 'scroll',
         overflowX: 'hidden',
-        fontFamily: '"Menlo", "Consolas", "DejaVu Sans Mono", "Liberation Mono", monospace'
       }}
       text={code}
       language='tsx'

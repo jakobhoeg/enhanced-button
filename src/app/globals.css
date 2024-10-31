@@ -1,7 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
+code {
+  font-family: "Menlo", "Consolas", "DejaVu Sans Mono", "Liberation Mono", monospace !important;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
