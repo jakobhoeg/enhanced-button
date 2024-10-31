@@ -43,7 +43,8 @@ export default function CodeblockButton ({code, lang, component}: CodeblockButto
         paddingLeft: '0.4rem',
         overflowY: 'hidden',
         overflowX: 'scroll',
-        height: '158px'
+        height: '158px',
+        fontFamily: '"Menlo", "Consolas", "DejaVu Sans Mono", "Liberation Mono", monospace'
       }}
       text={code}
       language='tsx'

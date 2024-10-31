@@ -38,7 +38,8 @@ export default function TailwindCodeblock() {
         paddingLeft: '0.4rem',
         overflowY: 'hidden',
         overflowX: 'hidden',
-        width: '768px'
+        width: '768px',
+        fontFamily: '"Menlo", "Consolas", "DejaVu Sans Mono", "Liberation Mono", monospace'
       }}
       text={tailwindCode}
       language='tsx'
