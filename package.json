@@ -20,7 +20,7 @@
     "react-code-blocks": "^0.1.6",
     "react-dom": "^18",
     "sonner": "^1.4.0",
-    "tailwind-merge": "^2.2.1",
+    "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
