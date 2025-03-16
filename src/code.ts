@@ -32,6 +32,8 @@ const buttonVariants = cva(
           'relative !no-underline after:absolute after:bg-primary after:bottom-2 after:h-[1px] after:w-2/3 after:origin-bottom-left after:scale-x-100 hover:after:origin-bottom-right hover:after:scale-x-0 after:transition-transform after:ease-in-out after:duration-300',
         hoverUnderline:
           'relative !no-underline after:absolute after:bg-primary after:bottom-2 after:h-[1px] after:w-2/3 after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300',
+        gradientSlideShow:
+          'bg-[size:400%] bg-[linear-gradient(-45deg,var(--gradient-lime),var(--gradient-ocean),var(--gradient-wine),var(--gradient-rust))] animate-gradient-flow',
       },
       size: {
         default: 'h-10 px-4 py-2',
@@ -104,9 +106,15 @@ const tailwindCode = `const config = {
         '25%': { backgroundPosition: '-200% 0' },
         '100%': { backgroundPosition: '-200% 0' },
       },
+      gradientFlow: {
+          '0%': { 'background-position':'0% 50%' },
+          '50%': { 'background-position': '100% 50%' },
+          '100%': { 'background-position': '0% 50%' },
+      },
     },
     animation: {
       shine: 'shine 3s ease-out infinite',
+      'gradient-flow': 'gradientFlow 10s ease 0s infinite normal none running',
     },
   },
 }`;

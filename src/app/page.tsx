@@ -65,6 +65,7 @@ export default function Home() {
             <ButtonExample text="Ring hover" effect="ringHover" />
             <ButtonExample text="Link hover underline" variant="link" effect="hoverUnderline" />
             <ButtonExample text="Link underline" variant="link" effect="underline" />
+            <ButtonExample text='Gradient slide show' effect="gradientSlideShow" />
           </div>
         </div>
 
