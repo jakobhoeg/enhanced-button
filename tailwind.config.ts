@@ -89,7 +89,7 @@ const config = {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         shine: 'shine 3s ease-out infinite',
-        "gradient-flow": 'gradientFlow 10s ease 0s infinite normal none running'
+        'gradient-flow': 'gradientFlow 10s ease 0s infinite normal none running'
       },
     },
   },
