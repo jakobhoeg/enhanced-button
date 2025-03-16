@@ -33,6 +33,12 @@
     --ring: 240 10% 3.9%;
  
     --radius: 0.5rem;
+
+    /* Gradient Colors */
+    --gradient-lime: #91a100;
+    --gradient-ocean: #0e5987;
+    --gradient-wine: #61092b;
+    --gradient-rust: #ce3000;
   }
  
   .dark {
