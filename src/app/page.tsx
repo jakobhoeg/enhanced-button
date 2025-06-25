@@ -66,6 +66,7 @@ export default function Home() {
             <ButtonExample text="Link hover underline" variant="link" effect="hoverUnderline" />
             <ButtonExample text="Link underline" variant="link" effect="underline" />
             <ButtonExample text='Gradient slide show' effect="gradientSlideShow" />
+            <ButtonExample text="Loader" loading={true} loadingText="Loading" />
           </div>
         </div>
 
@@ -91,6 +92,9 @@ export default function Home() {
             <ButtonExample variant="outline" text="Outline Ring hover" effect="ringHover" />
             <ButtonExample variant="outline" text="Outline Link hover underline" effect="hoverUnderline" />
             <ButtonExample variant="outline" text="Outline Link underline" effect="underline" />
+            <ButtonExample variant="destructive" text="Destructive Load" loading loadingText="Destructive Loading" />
+            <ButtonExample text="Loader Icon left" loading loadingText="Loading Icon left" loadingIconPlacement="left" />
+            <ButtonExample text="Loader w/ Icon" loading loadingText="Loading w/ Icon" loadingIconPlacement='left' icon={ArrowRightIcon} iconPlacement="right" />
           </div>
         </div>
 

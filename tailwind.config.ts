@@ -83,13 +83,18 @@ const config = {
           '100%': {
             'background-position': '0% 50%'
           }
+        },
+        'spinner-leaf-fade': {
+          '0%, 100%': { opacity: '0' },
+          '50%': { opacity: '1' },
         }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         shine: 'shine 3s ease-out infinite',
-        'gradient-flow': 'gradientFlow 10s ease 0s infinite normal none running'
+        'gradient-flow': 'gradientFlow 10s ease 0s infinite normal none running',
+        'spinner-leaf-fade': 'spinner-leaf-fade 800ms linear infinite',
       },
     },
   },
