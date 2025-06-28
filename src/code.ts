@@ -119,7 +119,7 @@ const tailwindCode = `const config = {
   },
 }`;
 
-function generateExampleButtonCode({ className, variant, effect, size, icon, iconPlacement, text, asChild = false }: ButtonExampleProps) {
+function generateExampleButtonCode({ className, variant, effect, size, icon, iconPlacement, text, loading, loadingText, loadingIconPlacement, hideIconOnLoading, asChild = false }: ButtonExampleProps) {
   const props = [
     className && `className="${className}"`,
     variant && `variant="${variant}"`,
@@ -128,6 +128,10 @@ function generateExampleButtonCode({ className, variant, effect, size, icon, ico
     // type workaround
     icon && `icon={${(icon as any).displayName}}`,
     iconPlacement && `iconPlacement="${iconPlacement}"`,
+    loading && `loading={true}`,
+    loadingText && `loadingText="${loadingText}"`,
+    loadingIconPlacement && `loadingIconPlacement="${loadingIconPlacement}"`,
+    hideIconOnLoading && `hideIconOnLoading={true}`,
     asChild && `asChild`,
   ]
     .filter(Boolean)

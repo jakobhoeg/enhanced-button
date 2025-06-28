@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Slot, Slottable } from '@radix-ui/react-slot';
 import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
+import { Spinner } from './spinner';
 
 const buttonVariants = cva(
   'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0',
@@ -47,6 +48,13 @@ const buttonVariants = cva(
   }
 );
 
+interface LoadingProps {
+  loading?: boolean;
+  loadingText?: string;
+  hideIconOnLoading?: boolean;
+  loadingIconPlacement?: 'left' | 'right';
+}
+
 interface IconProps {
   icon: React.ElementType;
   iconPlacement: 'left' | 'right';
@@ -62,14 +70,19 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 }
 
 export type ButtonIconProps = IconProps | IconRefProps;
+export type ButtonLoadingProps = LoadingProps;
 
-const Button = React.forwardRef<HTMLButtonElement, ButtonProps & ButtonIconProps>(
-  ({ className, variant, effect, size, icon: Icon, iconPlacement, asChild = false, ...props }, ref) => {
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps & ButtonIconProps & ButtonLoadingProps>(
+  ({ className, variant, effect, size, icon: Icon, iconPlacement, loading, loadingText, loadingIconPlacement = 'right', hideIconOnLoading = false, asChild = false, ...props }, ref) => {
     const Comp = asChild ? Slot : 'button';
     return (
-      <Comp className={cn(buttonVariants({ variant, effect, size, className }))} ref={ref} {...props}>
+      <Comp className={cn(buttonVariants({ variant, effect, size, className }))} disabled={loading} ref={ref} {...props}>
+        {loading &&
+          loadingIconPlacement === 'left' &&
+          <Spinner variant={variant || 'default'} />}
         {Icon &&
           iconPlacement === 'left' &&
+          !(hideIconOnLoading  && loading) &&
           (effect === 'expandIcon' ? (
             <div className="w-0 translate-x-[0%] pr-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-100 group-hover:pr-2 group-hover:opacity-100">
               <Icon />
@@ -77,9 +90,13 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps & ButtonIconProps
           ) : (
             <Icon />
           ))}
-        <Slottable>{props.children}</Slottable>
+        <Slottable>{loading ? loadingText : props.children}</Slottable>
+        {loading &&
+          loadingIconPlacement === 'right' &&
+          <Spinner variant={variant || 'default'} />}
         {Icon &&
           iconPlacement === 'right' &&
+          !(hideIconOnLoading  && loading) &&
           (effect === 'expandIcon' ? (
             <div className="w-0 translate-x-[100%] pl-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-0 group-hover:pl-2 group-hover:opacity-100">
               <Icon />
